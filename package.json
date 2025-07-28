@@ -1,0 +1,19 @@
+{
+  "name": "secure-pdf-qr-app-v4",
+  "version": "1.0.0",
+  "description": "Secure PDF QR embedding and verification",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "pdf-lib": "^1.17.1",
+    "qrcode-generator": "^1.4.4",
+    "jsqr": "^1.4.0",
+    "pdfjs-dist": "^3.11.174"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}

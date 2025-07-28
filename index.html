@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure PDF QR Verification v5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Secure PDF QR System v5</h1>
+        <div class="section">
+          <h2>Embed QR Code in PDF</h2>
+          <div class="formbold-mb-5 formbold-file-input">
+            <input accept="application/pdf" type="file" name="file" id="file" />
+            <label for="file" class="input-label">
+              <div>
+                <span class="formbold-drop-file"> Drop files here </span>
+                <span class="formbold-or"> Or </span>
+                <span class="formbold-browse"> Browse </span>
+              </div>
+            </label>
+          </div>
+          <div id="file-name"></div>
+          <input type="text" id="key" placeholder="Enter secret key" />
+          <div class="row-buttons">
+            <button id="btnEmbed">Embed QR</button>
+            or
+            <button id="btnVerify">Verify PDF</button>
+          </div>
+          <pre id="verificationResult"></pre>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
